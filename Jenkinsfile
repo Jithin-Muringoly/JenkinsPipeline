@@ -7,8 +7,9 @@ stages{
                //  withDockerRegistry([ credentialsId: "dockerhub", url: "https://registry.hub.docker.com" ]) 
                 sh 'whoami'
                 sh 'docker ps'
-                docker build . --tag customdocker:4.0
-                echo "build done from container.sh"
+                sh 'bash container.sh'
+              //  docker build . --tag customdocker:4.0
+              //  echo "build done from container.sh"
               //       sh 'docker build . -t customdocker'
              //   sh 'docker ps -aqf "name=customdocker" > containerid.txt'
                // sh 'ls -ltr'
