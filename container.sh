@@ -4,7 +4,7 @@ echo "build done from container.sh"
 ls -ltr               
 docker run --name 060800 customdocker:4.0 -no-cache
 conatinerId1=$(docker ps -a | awk 'NR > 1 {print $1; exit}')
-containerId2=$(docker ps --filter ancestor=customdocker:4.0 --format "{{.ID}}")
+containerId2=$(docker ps --filter ancestor="customdocker:4.0" --format "{{.ID}}")
 docker ps
 ls
 docker ps -a
