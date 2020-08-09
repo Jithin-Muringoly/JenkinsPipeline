@@ -8,8 +8,8 @@ containerId2=$(docker ps --filter ancestor="customdocker:4.0" --format "{{.ID}}"
 docker ps
 ls
 docker ps -a
-echo "my container id is ${conatinerId1}"
-echo "my container id is ${conatinerId2}"
+echo "my container id1 is ${conatinerId1}"
+echo "my container id2 is ${conatinerId2}"
 #docker start ${conatinerId}
 #docker exec -i ${conatinerId} bash
 #ls
