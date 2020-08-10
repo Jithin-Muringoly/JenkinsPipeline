@@ -18,6 +18,6 @@ stages{
         s3Download(file:'/Tests3Download.zip', bucket:'ted-extensions', path:'round2/1593007460+qoresolution_qommnaryinsights_1-4_source.zip', force:true)
         }
     }
-
     }
-    }
+   }
+   }
