@@ -15,7 +15,8 @@ stages{
     stage('S3download') {
       steps {
         withAWS(credentials: 'AWS_ID', region: 'us-east-1') {
-        s3Download(file:'/Tests3Download.zip', bucket:'ted-extensions', path:'round2/1593007460+qoresolution_qommnaryinsights_1-4_source.zip', force:true)
+        s3Download(file:'/Tests3Download.zip', bucket:'ted-extensions', path:'round2/1581865868+Qore-Solutions_Qommentary-Insights_19-5-1_source.zip', force:true)
+           
         }
     }
     }
