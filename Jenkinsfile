@@ -12,6 +12,12 @@ stages{
         }     
            // post { always { cleanWs() } }
         }
+    stage('S3download') {
+      steps {
+        withAWS(credentials: 'aws_key', region: 'us-east-1') {
+        s3Download(file:'/Tests3Download.zip', bucket:'ted-extensions', path:'round2/1593007460+qoresolution_qommnaryinsights_1-4_source.zip', force:true)
+        }
+    }
 
     }
     }
